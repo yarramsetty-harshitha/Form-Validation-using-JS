@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    background: whitesmoke;
+    background: linear-gradient(120deg, blue, skyblue);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+
+    padding: 1em 2em;
+    width: 400px;
+
+    background: white;
+    
+    box-shadow: 0 0 13px white;
+    border-radius: 3px;
+}
+
+form h2 {
+    color: blue;
+}
+
+form input {
+    padding: .75em;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+form input[type="checkbox"],
+form label {
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    color: white;
+    background: blue;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background: white;
+    color: black;
+    transition: .3s;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
